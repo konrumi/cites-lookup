@@ -1,0 +1,14 @@
+.App-header {
+  height: 240px;
+  background-color: #222;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.App-header h2 {
+  height: 40px;
+  margin: 0;
+  padding: 50px;
+  color: #eee;
+  font-size: 36px;
+  line-height: 28px;
+}
