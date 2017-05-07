@@ -77,7 +77,7 @@ class Detail extends Component {
                     }
                 </div>
                 <div className="Detail-intro">
-                    <p>* 本站数据整理自 <a href="http://www.forestry.gov.cn/portal/wlmq/s/3585/content-567634.html">中国林业网</a> ，如有疏漏或问题，请及时联系 <a href="mailto:konru@qq.com">作者</a> ，非常感谢！</p>
+                    <p>* 本站数据整理自 <a href="http://www.forestry.gov.cn/portal/wlmq/s/3585/content-567634.html">中国林业网</a> ，如有疏漏或问题，请及时联系 <a href="https://github.com/konrumi/cites-lookup">作者</a> ，非常感谢！</p>
                     <p>* 本站开发基于React，若您遇到兼容性问题无法使用，请尝试打开浏览器的“快速模式”，或尝试升级浏览器，谢谢！</p>
                     <p>* 本站数据仍在整理中，尚不完善，请暂勿作为参考，谢谢！</p>
                 </div>
