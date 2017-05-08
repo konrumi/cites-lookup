@@ -10,20 +10,35 @@ class Suggest extends Component {
 
     }
 
-    clickHandler(e) {
-        this.props.suggestCheck(e.target.dataset.name);
-        this.refs['textInput'].value = e.target.innerText;
+    clickSuggestHandler(e) {
+        if (e.target.dataset.name) {
+            this.props.suggestCheck(e.target.dataset.name);
+        }
     }
+
+    clickSearchHandler() {
+        if (this.refs['textInput'].value) {
+            this.props.suggestSearch(this.refs['textInput'].value);
+        }
+    }
+
+    keypressHandler(e) {
+        if (e.charCode === 13) {
+            this.props.suggestSearch(e.target.value);
+        }
+    }
+
 
     clearInput() {
         this.refs['textInput'].value = '';
         this.props.suggestCheck('');
+        this.props.suggestSearch('');
     }
 
     renderList(listData) {
         if (listData.length > 0) {
             return (
-                <ul onClick={this.clickHandler.bind(this)}>
+                <ul onClick={this.clickSuggestHandler.bind(this)}>
                     {
                         listData.map(function(data, idx) {
                             return (
@@ -54,7 +69,8 @@ class Suggest extends Component {
         return (
             <div className="Suggest">
                 <div className="Suggest-input-container">
-                    <input type="text" placeholder="请输入物种名..." onChange={this.changeHandler.bind(this)} ref="textInput" />
+                    <input type="text" placeholder="请输入物种名..." onKeyPress={this.keypressHandler.bind(this)} onChange={this.changeHandler.bind(this)} onFocus={this.changeHandler.bind(this)} ref="textInput" />
+                    <button onClick={this.clickSearchHandler.bind(this)}>&#8629;</button>
                     <a href="#" onClick={this.clearInput.bind(this)}>&#215;</a>
                     {
                         this.renderList(showList)

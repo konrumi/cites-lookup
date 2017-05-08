@@ -9,7 +9,26 @@ class Detail extends Component {
         3: 'CITES 附录III'
     };
 
-    makeData(obj) {
+    searchCheck(e) {
+        this.props.searchCheck(e.target.dataset.name);
+    }
+
+    makeSearchResult(list) {
+        if (list.length > 0) {
+            return (
+                <div>
+                    <h3>检索结果：</h3>
+                    {
+                        list.map((obj, idx) => {
+                            return (<li key={idx}><a data-name={obj.obj.binomial} onClick={this.searchCheck.bind(this)}>{obj.obj.cnName} {obj.obj.binomial}</a></li>)
+                        })
+                    }
+                </div>
+            );
+        }
+    }
+
+    makeDetailData(obj) {
         if (obj) {
             return (
                 <div>
@@ -57,7 +76,7 @@ class Detail extends Component {
                             <td>
                                 <ul>
                                     <li><a href={'https://zh.wikipedia.org/wiki/' + obj.binomial} target="_blank">维基百科</a></li>
-                                    <li style={{fontSize: 12 + 'px'}}><a href={'http://baike.baidu.com/item/' + obj.cnName} target="_blank">百度百科</a>(仅供参考...)</li>
+                                    <li><a href={'http://baike.baidu.com/item/' + obj.cnName} target="_blank">百度百科</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -71,9 +90,14 @@ class Detail extends Component {
     render() {
         return (
             <div className="Detail">
+                <div className="Detail-search">
+                    {
+                        this.makeSearchResult(this.props.list)
+                    }
+                </div>
                 <div className="Detail-data">
                     {
-                        this.makeData(this.props.obj)
+                        this.makeDetailData(this.props.obj)
                     }
                 </div>
                 <div className="Detail-intro">

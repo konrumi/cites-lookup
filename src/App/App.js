@@ -11,11 +11,11 @@ import data from '../data/data';
 class App extends Component {
     state = {
         matched: [],
+        searched: [],
         detail: null
     };
 
-
-    suggestInput(str) {
+    getMatchList(str) {
         let searchKey = '';
         let matchedList = [];
 
@@ -38,19 +38,41 @@ class App extends Component {
                     });
                 }
             });
-        } else {
+        }
+
+        return matchedList;
+    }
+
+
+    suggestInput(str) {
+        // clear result
+        if (str.length === 0) {
             this.setState({
+                searched: [],
+                matched: [],
                 detail: null
             });
         }
 
+        // assign result to list
         this.setState({
-            matched: matchedList
+            searched: [],
+            matched: this.getMatchList(str),
+            detail: null
+        });
+    }
+
+    suggestSearch(str) {
+        this.setState({
+            matched: [],
+            searched: this.getMatchList(str),
+            detail: null
         });
     }
 
     suggestCheck(str) {
         this.setState({
+            searched: [],
             matched: [],
             detail: data.dataDict[str]
         });
@@ -62,19 +84,26 @@ class App extends Component {
                 <div className="App-header">
                     <h2>《濒危野生动植物种国际贸易公约》(CITES) 速查器</h2>
                     <Suggest
+                        suggLength={5}
+                        matched={this.state.matched}
                         suggestInput={(str) => {
                             this.suggestInput(str);
+                        }}
+                        suggestSearch={(str) => {
+                            this.suggestSearch(str);
                         }}
                         suggestCheck={(name) => {
                             this.suggestCheck(name);
                         }}
-                        suggLength={5}
-                        matched={this.state.matched}
                     />
                 </div>
                 <div className="App-content">
                     <Detail
+                        list={this.state.searched}
                         obj={this.state.detail}
+                        searchCheck={(name) => {
+                            this.suggestCheck(name);
+                        }}
                     />
                 </div>
             </div>

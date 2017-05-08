@@ -3,6 +3,19 @@
   margin: 0 auto;
   padding: 10px;
 }
+.Detail .Detail-search h3 {
+  color: #666;
+  font-size: 28px;
+  font-weight: 400;
+}
+.Detail .Detail-search li {
+  font-size: 16px;
+  padding: 8px 0;
+  list-style: none;
+}
+.Detail .Detail-search li a {
+  cursor: pointer;
+}
 .Detail .Detail-data h3 {
   height: 50px;
   margin: 40px 0;

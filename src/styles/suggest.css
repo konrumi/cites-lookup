@@ -1,13 +1,16 @@
 .Suggest input {
   position: relative;
-  width: 100%;
+  width: 590px;
   height: 50px;
   padding: 0 10px;
   border: 1px solid #69f;
-  border-radius: 5px;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   font: 14px/20px "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "Segoe UI", Tahoma, sans-serif;
   font-size: 18px;
   box-sizing: border-box;
+  vertical-align: top;
   z-index: 2;
 }
 .Suggest input:focus {
@@ -17,7 +20,7 @@
 .Suggest ul {
   position: relative;
   top: -2px;
-  width: 100%;
+  width: 650px;
   padding: 2px 0 0 0;
   margin: 0 auto;
   border: 1px solid #999;
@@ -43,7 +46,7 @@
 }
 .Suggest .Suggest-input-container a {
   position: absolute;
-  right: 0;
+  right: 60px;
   width: 28px;
   height: 28px;
   padding: 10px 5px;
@@ -57,4 +60,30 @@
 }
 .Suggest .Suggest-input-container a:hover {
   color: #c66;
+}
+.Suggest .Suggest-input-container button {
+  position: relative;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #69f;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  background-color: #9cf;
+  box-sizing: border-box;
+  vertical-align: top;
+  cursor: pointer;
+  outline: none;
+  z-index: 3;
+  transition: background-color 0.2s;
+}
+.Suggest .Suggest-input-container button:hover {
+  background-color: #cef;
+}
+.Suggest .Suggest-input-container button:active {
+  background-color: #9cf;
 }
