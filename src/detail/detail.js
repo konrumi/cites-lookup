@@ -57,7 +57,7 @@ class Detail extends Component {
                             <td>
                                 <ul>
                                     <li><a href={'https://zh.wikipedia.org/wiki/' + obj.binomial} target="_blank">维基百科</a></li>
-                                    <li><a href={'http://baike.baidu.com/item/' + obj.cnName} target="_blank" style="font-size: 12px;">百度百科(仅供参考...)</a></li>
+                                    <li style={{fontSize: 12 + 'px'}}><a href={'http://baike.baidu.com/item/' + obj.cnName} target="_blank">百度百科</a>(仅供参考...)</li>
                                 </ul>
                             </td>
                         </tr>
