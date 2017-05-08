@@ -6,7 +6,7 @@ import '../styles/suggest.css';
 
 class Suggest extends Component {
     changeHandler(e) {
-        this.props.suggestInput(e.target.value);
+        this.props.suggestInput(_.trim(e.target.value));
 
     }
 
@@ -18,13 +18,13 @@ class Suggest extends Component {
 
     clickSearchHandler() {
         if (this.refs['textInput'].value) {
-            this.props.suggestSearch(this.refs['textInput'].value);
+            this.props.suggestSearch(_.trim(this.refs['textInput'].value));
         }
     }
 
     keypressHandler(e) {
         if (e.charCode === 13) {
-            this.props.suggestSearch(e.target.value);
+            this.props.suggestSearch(_.trim(e.target.value));
         }
     }
 
@@ -36,7 +36,7 @@ class Suggest extends Component {
     }
 
     renderList(listData) {
-        if (listData.length > 0) {
+        if (listData && listData.length > 0) {
             return (
                 <ul onClick={this.clickSuggestHandler.bind(this)}>
                     {
@@ -54,17 +54,19 @@ class Suggest extends Component {
     render() {
         let showList = _.cloneDeep(this.props.matched);
 
-        showList = showList.slice(0, this.props.suggLength || 10);
+        if (this.props.matched !== null) {
+            showList = showList.slice(0, this.props.suggLength || 10);
 
-        showList.sort(function(a, b) {
-            if (a.index !== b.index) {
-                return (a.index - b.index);
-            } else if (a.obj.cnName.length !== b.obj.cnName.length) {
-                return (a.obj.cnName.length - b.obj.cnName.length);
-            } else {
-                return (a.obj.binomial.length - b.obj.binomial.length);
-            }
-        });
+            showList.sort(function(a, b) {
+                if (a.index !== b.index) {
+                    return (a.index - b.index);
+                } else if (a.obj.cnName.length !== b.obj.cnName.length) {
+                    return (a.obj.cnName.length - b.obj.cnName.length);
+                } else {
+                    return (a.obj.binomial.length - b.obj.binomial.length);
+                }
+            });
+        }
 
         return (
             <div className="Suggest">

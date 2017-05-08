@@ -4,9 +4,9 @@ import '../styles/detail.css';
 
 class Detail extends Component {
     typeDict = {
-        1: 'CITES 附录I',
-        2: 'CITES 附录II',
-        3: 'CITES 附录III'
+        1: 'CITES 附录Ⅰ',
+        2: 'CITES 附录Ⅱ',
+        3: 'CITES 附录Ⅲ'
     };
 
     searchCheck(e) {
@@ -16,10 +16,10 @@ class Detail extends Component {
     }
 
     makeSearchResult(list) {
-        if (list.length > 0) {
+        if (list !== null) {
             return (
                 <div>
-                    <h3>检索结果 ({list.length})：</h3>
+                    <h3>检索结果 ({list.length})</h3>
                     <ul onClick={this.searchCheck.bind(this)}>
                     {
                         list.map(function(obj, idx) {
@@ -73,7 +73,7 @@ class Detail extends Component {
                         </tr>
                         <tr>
                             <th>备注</th>
-                            <td>{obj.comment || '--'}</td>
+                            <td><p>{obj.comment || '--'}</p></td>
                         </tr>
                         <tr>
                             <th>链接</th>
@@ -105,7 +105,7 @@ class Detail extends Component {
                     }
                 </div>
                 <div className="Detail-intro">
-                    <p>* 本站数据整理自 <a href="http://www.forestry.gov.cn/portal/wlmq/s/3585/content-567634.html">中国林业网</a> ，如有疏漏或问题，请及时联系 <a href="https://github.com/konrumi/cites-lookup">作者</a> ，非常感谢！</p>
+                    <p>* 本站数据整理自 <a href="http://www.cites.org.cn/article/list.php?catid=20">中华人民共和国濒危物种科学委员会</a> ，如有疏漏或问题，请及时联系 <a href="https://github.com/konrumi/cites-lookup/issues">作者</a> ，非常感谢！</p>
                     <p>* 本站开发基于React，若您遇到兼容性问题无法使用，请尝试打开浏览器的“快速模式”，或尝试升级浏览器，谢谢！</p>
                     <p>* 本站数据仍在整理中，尚不完善，请暂勿作为参考，谢谢！</p>
                 </div>

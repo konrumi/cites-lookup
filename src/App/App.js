@@ -10,8 +10,8 @@ import data from '../data/data';
 
 class App extends Component {
     state = {
-        matched: [],
-        searched: [],
+        matched: null,
+        searched: null,
         detail: null
     };
 
@@ -47,15 +47,15 @@ class App extends Component {
         // clear result
         if (str.length === 0) {
             this.setState({
-                searched: [],
-                matched: [],
+                searched: null,
+                matched: null,
                 detail: null
             });
         }
 
         // assign result to list
         this.setState({
-            searched: [],
+            searched: null,
             matched: this.getMatchList(str),
             detail: null
         });
@@ -63,15 +63,15 @@ class App extends Component {
 
     suggestSearch(str) {
         this.setState({
-            matched: [],
             searched: this.getMatchList(str),
+            matched: null,
             detail: null
         });
     }
 
     suggestCheck(str) {
         this.setState({
-            searched: [],
+            searched: null,
             matched: [],
             detail: data.dataDict[str]
         });

@@ -55,6 +55,9 @@
 .Detail .Detail-data td {
   width: 80%;
 }
+.Detail .Detail-data td p {
+  line-height: 2;
+}
 .Detail .Detail-intro {
   margin-top: 40px;
   padding: 40px;
