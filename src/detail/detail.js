@@ -19,7 +19,7 @@ class Detail extends Component {
         if (list.length > 0) {
             return (
                 <div>
-                    <h3>检索结果：</h3>
+                    <h3>检索结果 ({list.length})：</h3>
                     <ul onClick={this.searchCheck.bind(this)}>
                     {
                         list.map(function(obj, idx) {
