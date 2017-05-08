@@ -56,16 +56,6 @@ class Suggest extends Component {
 
         if (this.props.matched !== null) {
             showList = showList.slice(0, this.props.suggLength || 10);
-
-            showList.sort(function(a, b) {
-                if (a.index !== b.index) {
-                    return (a.index - b.index);
-                } else if (a.obj.cnName.length !== b.obj.cnName.length) {
-                    return (a.obj.cnName.length - b.obj.cnName.length);
-                } else {
-                    return (a.obj.binomial.length - b.obj.binomial.length);
-                }
-            });
         }
 
         return (

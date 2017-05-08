@@ -19,6 +19,7 @@ class App extends Component {
         let searchKey = '';
         let matchedList = [];
 
+        // make list
         if (str.length > 0) {
             // set search key
             if (str.match(/[^a-zA-Z]/g) !== null) {
@@ -34,11 +35,22 @@ class App extends Component {
                     matchedList.push({
                         key,
                         obj,
-                        index: obj[searchKey].indexOf(str)
+                        index: obj[searchKey].toLowerCase().indexOf(str.toLowerCase())
                     });
                 }
             });
         }
+
+        // sort list
+        matchedList.sort(function(a, b) {
+            if (a.index !== b.index) {
+                return (a.index - b.index);
+            } else if (a.obj.cnName.length !== b.obj.cnName.length) {
+                return (a.obj.cnName.length - b.obj.cnName.length);
+            } else {
+                return (a.obj.binomial.length - b.obj.binomial.length);
+            }
+        });
 
         return matchedList;
     }
