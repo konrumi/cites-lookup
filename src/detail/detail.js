@@ -41,27 +41,27 @@ class Detail extends Component {
                         <tbody>
                         <tr>
                             <th>门 (Phylum)</th>
-                            <td>{obj.phylum}</td>
+                            <td>{obj.phylum || '--'}</td>
                         </tr>
                         <tr>
                             <th>纲 (Class)</th>
-                            <td>{obj.class}</td>
+                            <td>{obj.class || '--'}</td>
                         </tr>
                         <tr>
                             <th>目 (Order)</th>
-                            <td>{obj.order}</td>
+                            <td>{obj.order || '--'}</td>
                         </tr>
                         <tr>
                             <th>科 (Family)</th>
-                            <td>{obj.family}</td>
+                            <td>{obj.family || '--'}</td>
                         </tr>
                         <tr>
                             <th>二名法 (Binomial)</th>
-                            <td>{obj.binomial}</td>
+                            <td>{obj.binomial || '--'}</td>
                         </tr>
                         <tr>
                             <th>中文名称</th>
-                            <td>{obj.cnName}</td>
+                            <td>{obj.cnName || '--'}</td>
                         </tr>
                         <tr>
                             <th>记录位置</th>
