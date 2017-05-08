@@ -1,7 +1,7 @@
 let CITEData = {
     dataDict: {
         'Antilocapra americana': {
-            'group': '动物 FAUNA ', // 相
+            'group': '动物 FAUNA', // 相
             'phylum': '脊索动物门 PHYLUM CHORDATA', // 门
             'class': '哺乳纲 MAMMALIA', // 纲
             'order': '偶蹄目 ARTIODACTYLA', // 目
@@ -13,7 +13,7 @@ let CITEData = {
             'local': false
         },
         'Addax nasomaculatus': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -25,7 +25,7 @@ let CITEData = {
             'local': false
         },
         'Bos gaurus': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -37,7 +37,7 @@ let CITEData = {
             'local': true
         },
         'Bos mutus': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -49,7 +49,7 @@ let CITEData = {
             'local': true
         },
         'Bos sauveli': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -61,7 +61,7 @@ let CITEData = {
             'local': false
         },
         'Bubalus depressicornis': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -73,7 +73,7 @@ let CITEData = {
             'local': false
         },
         'Bubalus mindorensis': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -85,7 +85,7 @@ let CITEData = {
             'local': false
         },
         'Bubalus quarlesi': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -97,7 +97,7 @@ let CITEData = {
             'local': false
         },
         'Capra falconeri': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -109,7 +109,7 @@ let CITEData = {
             'local': false
         },
         'Capricornis milneedwardsii': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -121,7 +121,7 @@ let CITEData = {
             'local': true
         },
         'Capricornis rubidus': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -133,7 +133,7 @@ let CITEData = {
             'local': false
         },
         'Capricornis sumatraensis': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -145,7 +145,7 @@ let CITEData = {
             'local': false
         },
         'Capricornis thar': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -157,7 +157,7 @@ let CITEData = {
             'local': true
         },
         'Cephalophus jentinki': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -169,7 +169,7 @@ let CITEData = {
             'local': false
         },
         'Gazella cuvieri': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -181,7 +181,7 @@ let CITEData = {
             'local': false
         },
         'Gazella leptoceros': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -193,103 +193,103 @@ let CITEData = {
             'local': false
         },
         'Hippotragus niger variani': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
-            'binomial': ' Hippotragus niger variani',
+            'binomial': 'Hippotragus niger variani',
             'cnName': '大貂羚安哥拉亚种',
             'type': 1,
             'comment': '',
             'local': false
         },
         'Naemorhedus baileyi': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
-            'binomial': ' Naemorhedus baileyi',
+            'binomial': 'Naemorhedus baileyi',
             'cnName': '西藏斑羚',
             'type': 1,
             'comment': '',
             'local': true
         },
         'Naemorhedus caudatus': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
-            'binomial': ' Naemorhedus caudatus',
+            'binomial': 'Naemorhedus caudatus',
             'cnName': '西伯利亚斑羚',
             'type': 1,
             'comment': '',
             'local': true
         },
         'Naemorhedus goral': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
-            'binomial': ' Naemorhedus goral',
+            'binomial': 'Naemorhedus goral',
             'cnName': '斑羚',
             'type': 1,
             'comment': '',
             'local': true
         },
         'Naemorhedus griseus': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
-            'binomial': ' Naemorhedus griseus',
+            'binomial': 'Naemorhedus griseus',
             'cnName': '灰斑羚',
             'type': 1,
             'comment': '',
             'local': true
         },
         'Nanger dama': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
-            'binomial': ' Nanger dama',
+            'binomial': 'Nanger dama',
             'cnName': '苍羚',
             'type': 1,
             'comment': '',
             'local': false
         },
         'Oryx dammah': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
-            'binomial': ' Oryx dammah',
+            'binomial': 'Oryx dammah',
             'cnName': '弯角大羚羊',
             'type': 1,
             'comment': '',
             'local': false
         },
         'Oryx leucoryx': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
-            'binomial': ' Oryx leucoryx',
+            'binomial': 'Oryx leucoryx',
             'cnName': '阿拉伯大羚羊',
             'type': 1,
             'comment': '',
             'local': false
         },
         'Ovis ammon hodgsonii': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -301,7 +301,7 @@ let CITEData = {
             'local': true
         },
         'Ovis ammon nigrimontana': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -313,7 +313,7 @@ let CITEData = {
             'local': false
         },
         'Ammotragus lervia': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -325,7 +325,7 @@ let CITEData = {
             'local': false
         },
         'Bison bison athabascae': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -337,7 +337,7 @@ let CITEData = {
             'local': false
         },
         'Budorcas taxicolor': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -349,7 +349,7 @@ let CITEData = {
             'local': true
         },
         'Cephalophus brookei': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -361,7 +361,7 @@ let CITEData = {
             'local': false
         },
         'Cephalophus dorsalis': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -373,7 +373,7 @@ let CITEData = {
             'local': false
         },
         'Cephalophus ogilbyi': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -385,7 +385,7 @@ let CITEData = {
             'local': false
         },
         'Cephalophus silvicultor': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -397,7 +397,7 @@ let CITEData = {
             'local': false
         },
         'Cephalophus zebra': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -409,7 +409,7 @@ let CITEData = {
             'local': false
         },
         'Damaliscus pygargus pyqargus': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -421,7 +421,7 @@ let CITEData = {
             'local': false
         },
         'Kobus leche': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -433,7 +433,7 @@ let CITEData = {
             'local': false
         },
         'Ovis ammon': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -444,8 +444,8 @@ let CITEData = {
             'comment': '除被列入附录I的亚种',
             'local': true
         },
-        'Ovis canadensis ': {
-            'group': '动物 FAUNA ',
+        'Ovis canadensis': {
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -457,19 +457,19 @@ let CITEData = {
             'local': false
         },
         'Ovis vignei': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
             'family': '牛科 Bovidae',
             'binomial': 'Ovis vignei',
-            'cnName': '加拿大盘羊',
+            'cnName': '维氏盘羊',
             'type': 2,
             'comment': '除被列入附录I的亚种',
             'local': false
         },
         'Philantomba monticola': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -481,7 +481,7 @@ let CITEData = {
             'local': false
         },
         'Saiga borealis': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -493,7 +493,7 @@ let CITEData = {
             'local': false
         },
         'Saiga tatarica': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -505,7 +505,7 @@ let CITEData = {
             'local': true
         },
         'Antilope cervicapra': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -517,7 +517,7 @@ let CITEData = {
             'local': false
         },
         'Bubalus arnee': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -529,7 +529,7 @@ let CITEData = {
             'local': false
         },
         'Gazella dorcas': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -541,7 +541,7 @@ let CITEData = {
             'local': false
         },
         'Tetracerus quadricornis': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -553,7 +553,7 @@ let CITEData = {
             'local': false
         },
         'Ovis orientalis ophion': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -565,7 +565,7 @@ let CITEData = {
             'local': false
         },
         'Ovis vignei vignei': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -577,7 +577,7 @@ let CITEData = {
             'local': false
         },
         'Pantholops hodgsonii': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -589,7 +589,7 @@ let CITEData = {
             'local': true
         },
         'Pseudoryx nghetinhensis': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',
@@ -601,7 +601,7 @@ let CITEData = {
             'local': false
         },
         'Rupicapra pyrenaica ornata': {
-            'group': '动物 FAUNA ',
+            'group': '动物 FAUNA',
             'phylum': '脊索动物门 PHYLUM CHORDATA',
             'class': '哺乳纲 MAMMALIA',
             'order': '偶蹄目 ARTIODACTYLA',

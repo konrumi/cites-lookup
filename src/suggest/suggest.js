@@ -11,8 +11,8 @@ class Suggest extends Component {
     }
 
     clickSuggestHandler(e) {
-        if (e.target.dataset.name) {
-            this.props.suggestCheck(e.target.dataset.name);
+        if (e.target.dataset.key) {
+            this.props.suggestCheck(e.target.dataset.key);
         }
     }
 
@@ -42,7 +42,7 @@ class Suggest extends Component {
                     {
                         listData.map(function(data, idx) {
                             return (
-                                <li key={idx} data-name={data.key}>{data.obj.cnName} {data.obj.binomial}</li>
+                                <li key={idx} data-key={data.key}>{data.obj.cnName} {data.obj.binomial}</li>
                             );
                         })
                     }

@@ -10,7 +10,9 @@ class Detail extends Component {
     };
 
     searchCheck(e) {
-        this.props.searchCheck(e.target.dataset.name);
+        if (e.target.dataset.key) {
+            this.props.searchCheck(e.target.dataset.key);
+        }
     }
 
     makeSearchResult(list) {
@@ -18,11 +20,13 @@ class Detail extends Component {
             return (
                 <div>
                     <h3>检索结果：</h3>
+                    <ul onClick={this.searchCheck.bind(this)}>
                     {
-                        list.map((obj, idx) => {
-                            return (<li key={idx}><a data-name={obj.obj.binomial} onClick={this.searchCheck.bind(this)}>{obj.obj.cnName} {obj.obj.binomial}</a></li>)
+                        list.map(function(obj, idx) {
+                            return (<li key={idx}><a data-key={obj.key}>{obj.obj.cnName} {obj.obj.binomial}</a></li>)
                         })
                     }
+                    </ul>
                 </div>
             );
         }

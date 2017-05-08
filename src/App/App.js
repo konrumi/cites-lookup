@@ -43,7 +43,6 @@ class App extends Component {
         return matchedList;
     }
 
-
     suggestInput(str) {
         // clear result
         if (str.length === 0) {
