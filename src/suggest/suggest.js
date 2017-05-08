@@ -25,14 +25,14 @@ class Suggest extends Component {
     keypressHandler(e) {
         if (e.charCode === 13) {
             this.props.suggestSearch(_.trim(e.target.value));
+            this.refs['textInput'].blur();
         }
     }
 
 
     clearInput() {
         this.refs['textInput'].value = '';
-        this.props.suggestCheck('');
-        this.props.suggestSearch('');
+        this.props.suggestInput('');
     }
 
     renderList(listData) {
