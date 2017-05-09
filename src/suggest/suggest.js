@@ -5,6 +5,8 @@ import '../styles/suggest.css';
 
 
 class Suggest extends Component {
+    eles = {};
+
     keyboardActiveItem = null;
 
     showList = [];
@@ -23,8 +25,8 @@ class Suggest extends Component {
 
     clickSearchHandler() {
         this.keyboardActiveItem = null;
-        if (this.refs['textInput'].value) {
-            this.props.suggestSearch(_.trim(this.refs['textInput'].value));
+        if (this.eles['textInput'].value) {
+            this.props.suggestSearch(_.trim(this.eles['textInput'].value));
         }
     }
 
@@ -34,12 +36,12 @@ class Suggest extends Component {
             if (this.keyboardActiveItem === null) {
                 // trigger search
                 this.props.suggestSearch(_.trim(e.target.value));
-                this.refs['textInput'].blur();
+                this.eles['textInput'].blur();
             } else {
                 // trigger detail
                 this.keyboardActiveItem = null;
-                if (this.refs['suggList'] && this.refs['suggList'].querySelectorAll('li.active').length > 0) {
-                    this.props.suggestCheck(this.refs['suggList'].querySelectorAll('li.active')[0].dataset.key);
+                if (this.eles['suggList'] && this.eles['suggList'].querySelectorAll('li.active').length > 0) {
+                    this.props.suggestCheck(this.eles['suggList'].querySelectorAll('li.active')[0].dataset.key);
                 }
             }
 
@@ -71,27 +73,27 @@ class Suggest extends Component {
     markSugguestItem(index) {
         if (index !== null) {
             this.clearSuggestMark();
-            this.refs['suggList'].querySelectorAll('li')[index].className = 'active';
+            this.eles['suggList'].querySelectorAll('li')[index].className = 'active';
         }
     }
 
     clearSuggestMark() {
-        if (this.refs['suggList'] && this.refs['suggList'].querySelectorAll('li.active').length) {
-            this.refs['suggList'].querySelectorAll('li.active').forEach(function(ele) {
+        if (this.eles['suggList'] && this.eles['suggList'].querySelectorAll('li.active').length) {
+            this.eles['suggList'].querySelectorAll('li.active').forEach(function(ele) {
                 ele.className = '';
             });
         }
     }
 
     clearInput() {
-        this.refs['textInput'].value = '';
+        this.eles['textInput'].value = '';
         this.props.suggestInput('');
     }
 
     renderList(listData) {
         if (listData && listData.length > 0) {
             return (
-                <ul onClick={this.clickSuggestHandler.bind(this)} ref="suggList">
+                <ul onClick={this.clickSuggestHandler.bind(this)} ref={(ele) => {this.eles['suggList'] = ele;}}>
                     {
                         listData.map(function(data, idx) {
                             return (
@@ -116,7 +118,7 @@ class Suggest extends Component {
         return (
             <div className="Suggest">
                 <div className="Suggest-input-container">
-                    <input type="text" placeholder="请输入物种名..." onKeyDown={this.keydownHandler.bind(this)} onChange={this.changeHandler.bind(this)} onClick={this.changeHandler.bind(this)} ref="textInput" />
+                    <input type="text" placeholder="请输入物种名..." onKeyDown={this.keydownHandler.bind(this)} onChange={this.changeHandler.bind(this)} onClick={this.changeHandler.bind(this)} ref={(ele) => {this.eles['textInput'] = ele;}} />
                     <button onClick={this.clickSearchHandler.bind(this)}>&#8629;</button>
                     <a onClick={this.clearInput.bind(this)}>&#215;</a>
                     {
