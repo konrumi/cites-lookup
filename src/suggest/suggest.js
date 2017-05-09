@@ -63,7 +63,9 @@ class Suggest extends Component {
             this.keyboardActiveItem = null;
         }
 
-        this.markSugguestItem(this.keyboardActiveItem >= 0 ? this.keyboardActiveItem : this.keyboardActiveItem + this.showList.length);
+        if (this.keyboardActiveItem !== null) {
+            this.markSugguestItem(this.keyboardActiveItem >= 0 ? this.keyboardActiveItem : this.keyboardActiveItem + this.showList.length);
+        }
     }
 
     markSugguestItem(index) {
@@ -74,7 +76,7 @@ class Suggest extends Component {
     }
 
     clearSuggestMark() {
-        if (this.refs['suggList']) {
+        if (this.refs['suggList'] && this.refs['suggList'].querySelectorAll('li.active').length) {
             this.refs['suggList'].querySelectorAll('li.active').forEach(function(ele) {
                 ele.className = '';
             });
