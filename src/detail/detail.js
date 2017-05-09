@@ -106,8 +106,9 @@ class Detail extends Component {
                 </div>
                 <div className="Detail-intro">
                     <p>* 本站数据整理自 <a href="http://www.cites.org.cn/article/list.php?catid=20">中华人民共和国濒危物种科学委员会</a> ，如有疏漏或问题，请及时联系 <a href="https://github.com/konrumi/cites-lookup/issues">作者</a> ，非常感谢！</p>
-                    <p>* 本站开发基于React，若您遇到兼容性问题无法使用，请尝试打开浏览器的“快速模式”，或尝试升级浏览器，谢谢！</p>
+                    <p>* 本站仅支持Chorme、Firefox等新版浏览器，若您遇到兼容性问题无法使用，请尝试更新浏览器；若您使用国产浏览器，请尝试打开浏览器的“快速模式”，谢谢！</p>
                     <p>* 本站数据仍在整理中，尚不完善，请暂勿作为参考，谢谢！</p>
+                    <p>* 如果遇到显示问题，请点击 <a onClick={() => {prompt('请复制下面字符串，非常感谢！', window.navigator.userAgent);}}>这里</a> ，并将弹出的字符串回报给作者，非常感谢！</p>
                 </div>
             </div>
         );
