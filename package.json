@@ -6,7 +6,8 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "request": "^2.81.0"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
@@ -60,7 +61,6 @@
     "test": "node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "jest": {
     "collectCoverageFrom": [

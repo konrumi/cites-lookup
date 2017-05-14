@@ -6,14 +6,31 @@ import '../styles/App.css';
 import Suggest from '../suggest/suggest';
 import Detail from '../detail/detail';
 
-import data from '../data/data';
-
 class App extends Component {
     state = {
+        isLoading: true,
         matched: null,
         searched: null,
         detail: null
     };
+
+    dataDict = {};
+
+    componentDidMount() {
+        let that = this;
+
+        let dataReq = new XMLHttpRequest();
+        dataReq.addEventListener('load', reqListener);
+        dataReq.open('GET', 'https://raw.githubusercontent.com/konrumi/cites-lookup/master/src/data/data.json', true);
+        dataReq.send();
+
+        function reqListener() {
+            that.dataDict = JSON.parse(this.responseText);
+            that.setState({
+                isLoading: false
+            });
+        }
+    }
 
     getMatchList(str) {
         let searchKey = '';
@@ -30,7 +47,7 @@ class App extends Component {
                 searchKey = 'binomial';
             }
 
-            _.forEach(data.dataDict, (obj, key) => {
+            _.forEach(this.dataDict, (obj, key) => {
                 if (obj[searchKey].match(new RegExp(str, 'gi')) !== null) {
                     matchedList.push({
                         key,
@@ -85,13 +102,26 @@ class App extends Component {
         this.setState({
             searched: null,
             matched: [],
-            detail: data.dataDict[str]
+            detail: this.dataDict[str]
         });
     }
 
     render() {
+        let getLoading = () => {
+            if (this.state.isLoading) {
+                return (
+                    <div className="App-loading">
+                        <span>数据加载中...</span>
+                    </div>
+                );
+            }
+        };
+
         return (
             <div className="App">
+                {
+                    getLoading()
+                }
                 <div className="App-header">
                     <h2>《濒危野生动植物种国际贸易公约》(CITES) 速查器</h2>
                     <Suggest
